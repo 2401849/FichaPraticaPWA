@@ -4,6 +4,9 @@ Push envia os commits que estão no repositório local para o repositório remot
 enviar o commit para uma branch (feature branch) onde posteriormente se poderá fazer "merge" com a branch main/master.
 Pop refere-se ao commando stash em que permite o developer mover as alterações guardadas em stash para a "working directory"
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+A utilização de branchs num repositório permite que o desenvolvimento de um produto seja feito em paralelo por vários developers, isolando o desenvolvimento de
+novas features, ou correção de bugs ou até mesmo melhorias de código, estes desenvolvimentos ficam isolados não criando dependencias entre eles.
+Permite inclusive testar se o desenvolvimento feito funciona corretamente, caso contrário é possível efetuar um rollback de forma fácil.
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
