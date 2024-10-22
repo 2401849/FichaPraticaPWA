@@ -9,5 +9,9 @@ novas features, ou correção de bugs ou até mesmo melhorias de código, estes 
 Permite inclusive testar se o desenvolvimento feito funciona corretamente, caso contrário é possível efetuar um rollback de forma fácil.
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+Os conflitos ocorrem quando as alterações que estão em stash entram em conflito com as alterações já presentes na "working directory" (HEAD), isto porque o Git não consegue
+de forma automática combinar as mudanças feitas em diferentes partes do código, pois há alterações concorrentes na mesma parte do ficheiro.
+Para resolver esses conflitos é necessário analisar que conflitos são e manualmente decidir qual a versão manter, as existentes na "working directory" onde estamos a fazer o merge
+(HEAD) ou as alterações vindas do stash, ou até mesmo combinar ambas caso faça sentido. Após a alteração procede-se com os comandos de add e commit.
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
