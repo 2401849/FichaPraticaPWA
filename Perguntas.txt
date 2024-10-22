@@ -3,15 +3,20 @@ Commit guarda o estado atual dos ficheiros no repositorio local, adicionando uma
 Push envia os commits que estão no repositório local para o repositório remoto, dependendo da configuração do repositório uma prática comum seria
 enviar o commit para uma branch (feature branch) onde posteriormente se poderá fazer "merge" com a branch main/master.
 Pop refere-se ao commando stash em que permite o developer mover as alterações guardadas em stash para a "working directory"
+
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
 A utilização de branchs num repositório permite que o desenvolvimento de um produto seja feito em paralelo por vários developers, isolando o desenvolvimento de
 novas features, ou correção de bugs ou até mesmo melhorias de código, estes desenvolvimentos ficam isolados não criando dependencias entre eles.
 Permite inclusive testar se o desenvolvimento feito funciona corretamente, caso contrário é possível efetuar um rollback de forma fácil.
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 Os conflitos ocorrem quando as alterações que estão em stash entram em conflito com as alterações já presentes na "working directory" (HEAD), isto porque o Git não consegue
 de forma automática combinar as mudanças feitas em diferentes partes do código, pois há alterações concorrentes na mesma parte do ficheiro.
 Para resolver esses conflitos é necessário analisar que conflitos são e manualmente decidir qual a versão manter, as existentes na "working directory" onde estamos a fazer o merge
 (HEAD) ou as alterações vindas do stash, ou até mesmo combinar ambas caso faça sentido. Após a alteração procede-se com os comandos de add e commit.
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+Clone cria uma cópia local exacta de um repositório remoto, incluindo o histórico e permite trabalhar localmente com o código.
+O Fork cria um novo repositório na conta do utilizador, com uma cópia exata do repositório original, mas independente deste. Tudo isso ocorre dentro da mesma plataforma (GitHub ou GitLab).
